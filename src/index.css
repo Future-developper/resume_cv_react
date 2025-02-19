@@ -1,0 +1,127 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+// Action
+$action: #5fcac6;
+$action-dark: #53aca9;
+
+// Detail
+$detail: #d5d7de;
+
+// State
+$failure: #e17776;
+$success: #76a7e1;
+
+// Spacing
+$space-xxs: 5px;
+$space-xs: 10px;
+$space-s: 15px;
+$space: 20px;
+$space-l: 25px;
+$space-xl: 30px;
+$space-xxl: 40px;
+
+// Text
+$text: #8f97b7;
+$text-dark: #71728c;
+$text-light: #9ea2b5;
+$text-invert: #ffffff;
+
+
+.fieldset + .fieldset,
+form + form,
+.message {
+  margin-top: $space;
+}
+
+label {
+  color: $text-light;
+  display: block;
+  font-size: 87.5%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid $detail;
+  color: $text-dark;
+  font-size: 100%;
+  padding: $space-s
+}
+
+button[ type="submit"] {
+  background: $action;
+  border: 1px solid $action-dark;
+  box-shadow: none;
+  color: $text-invert;
+  font-size: 87.5%;
+  text-transform: uppercase;
+}
